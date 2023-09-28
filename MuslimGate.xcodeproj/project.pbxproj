@@ -16,6 +16,18 @@
 		C146CA652A7EB1AB008B28BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C146CA642A7EB1AB008B28BD /* ContentView.swift */; };
 		C146CA672A7EB1AD008B28BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C146CA662A7EB1AD008B28BD /* Assets.xcassets */; };
 		C146CA6A2A7EB1AD008B28BD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C146CA692A7EB1AD008B28BD /* Preview Assets.xcassets */; };
+		C14EBFD22AC0C17900897C94 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C14EBFD12AC0C17900897C94 /* FirebaseFirestore */; };
+		C14EBFD42AC0C17900897C94 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = C14EBFD32AC0C17900897C94 /* FirebaseFirestoreCombine-Community */; };
+		C14EBFD62AC0C17900897C94 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C14EBFD52AC0C17900897C94 /* FirebaseStorage */; };
+		C14EBFD82AC0C17900897C94 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = C14EBFD72AC0C17900897C94 /* FirebaseStorageCombine-Community */; };
+		C16D24D62AC5DE06004D7798 /* QuranModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16D24D52AC5DE06004D7798 /* QuranModel.swift */; };
+		C16D24D82AC5DE1C004D7798 /* QuranViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16D24D72AC5DE1C004D7798 /* QuranViewModel.swift */; };
+		C16D24DA2AC5DE30004D7798 /* QuranView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16D24D92AC5DE30004D7798 /* QuranView.swift */; };
+		C16D24DD2AC5F856004D7798 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = C16D24DC2AC5F856004D7798 /* SDWebImageSwiftUI */; };
+		C1B7EF282AC0B6F900D3B1AC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1B7EF272AC0B6F900D3B1AC /* GoogleService-Info.plist */; };
+		C1FFB2122AC0D1D8003BCBCE /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C1FFB2112AC0D1D8003BCBCE /* FirebaseAuth */; };
+		C1FFB2152AC0D233003BCBCE /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = C1FFB2142AC0D233003BCBCE /* FirebaseDatabase */; };
+		C1FFB2172AC0D233003BCBCE /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C1FFB2162AC0D233003BCBCE /* FirebaseDatabaseSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +41,10 @@
 		C146CA642A7EB1AB008B28BD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C146CA662A7EB1AD008B28BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C146CA692A7EB1AD008B28BD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C16D24D52AC5DE06004D7798 /* QuranModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranModel.swift; sourceTree = "<group>"; };
+		C16D24D72AC5DE1C004D7798 /* QuranViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranViewModel.swift; sourceTree = "<group>"; };
+		C16D24D92AC5DE30004D7798 /* QuranView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranView.swift; sourceTree = "<group>"; };
+		C1B7EF272AC0B6F900D3B1AC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +52,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1FFB2172AC0D233003BCBCE /* FirebaseDatabaseSwift in Frameworks */,
+				C1FFB2152AC0D233003BCBCE /* FirebaseDatabase in Frameworks */,
+				C14EBFD22AC0C17900897C94 /* FirebaseFirestore in Frameworks */,
+				C1FFB2122AC0D1D8003BCBCE /* FirebaseAuth in Frameworks */,
+				C16D24DD2AC5F856004D7798 /* SDWebImageSwiftUI in Frameworks */,
+				C14EBFD42AC0C17900897C94 /* FirebaseFirestoreCombine-Community in Frameworks */,
+				C14EBFD82AC0C17900897C94 /* FirebaseStorageCombine-Community in Frameworks */,
+				C14EBFD62AC0C17900897C94 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,10 +105,12 @@
 		C146CA612A7EB1AB008B28BD /* MuslimGate */ = {
 			isa = PBXGroup;
 			children = (
+				C16D24D42AC5DDF4004D7798 /* Quran */,
 				C13BC4A02A84D2F30060B9CF /* TabView */,
 				C146CA622A7EB1AB008B28BD /* MuslimGateApp.swift */,
 				C146CA642A7EB1AB008B28BD /* ContentView.swift */,
 				C146CA662A7EB1AD008B28BD /* Assets.xcassets */,
+				C1B7EF272AC0B6F900D3B1AC /* GoogleService-Info.plist */,
 				C146CA682A7EB1AD008B28BD /* Preview Content */,
 			);
 			path = MuslimGate;
@@ -96,6 +122,16 @@
 				C146CA692A7EB1AD008B28BD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C16D24D42AC5DDF4004D7798 /* Quran */ = {
+			isa = PBXGroup;
+			children = (
+				C16D24D52AC5DE06004D7798 /* QuranModel.swift */,
+				C16D24D72AC5DE1C004D7798 /* QuranViewModel.swift */,
+				C16D24D92AC5DE30004D7798 /* QuranView.swift */,
+			);
+			path = Quran;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -114,6 +150,16 @@
 			dependencies = (
 			);
 			name = MuslimGate;
+			packageProductDependencies = (
+				C14EBFD12AC0C17900897C94 /* FirebaseFirestore */,
+				C14EBFD32AC0C17900897C94 /* FirebaseFirestoreCombine-Community */,
+				C14EBFD52AC0C17900897C94 /* FirebaseStorage */,
+				C14EBFD72AC0C17900897C94 /* FirebaseStorageCombine-Community */,
+				C1FFB2112AC0D1D8003BCBCE /* FirebaseAuth */,
+				C1FFB2142AC0D233003BCBCE /* FirebaseDatabase */,
+				C1FFB2162AC0D233003BCBCE /* FirebaseDatabaseSwift */,
+				C16D24DC2AC5F856004D7798 /* SDWebImageSwiftUI */,
+			);
 			productName = MuslimGate;
 			productReference = C146CA5F2A7EB1AB008B28BD /* MuslimGate.app */;
 			productType = "com.apple.product-type.application";
@@ -142,6 +188,12 @@
 				Base,
 			);
 			mainGroup = C146CA562A7EB1AA008B28BD;
+			packageReferences = (
+				C14EBFD02AC0C17900897C94 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				C1FFB2102AC0D1D8003BCBCE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				C1FFB2132AC0D233003BCBCE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				C16D24DB2AC5F856004D7798 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = C146CA602A7EB1AB008B28BD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -158,6 +210,7 @@
 			files = (
 				C146CA6A2A7EB1AD008B28BD /* Preview Assets.xcassets in Resources */,
 				C146CA672A7EB1AD008B28BD /* Assets.xcassets in Resources */,
+				C1B7EF282AC0B6F900D3B1AC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,10 +224,13 @@
 				C13BC4AB2A84D4950060B9CF /* Model.swift in Sources */,
 				C146CA652A7EB1AB008B28BD /* ContentView.swift in Sources */,
 				C13BC4A52A84D3C10060B9CF /* HomeView.swift in Sources */,
+				C16D24D62AC5DE06004D7798 /* QuranModel.swift in Sources */,
 				C13BC4A72A84D3E90060B9CF /* FavouriteView.swift in Sources */,
 				C13BC4A92A84D3F90060B9CF /* SettingsView.swift in Sources */,
 				C13BC4A22A84D3860060B9CF /* TabBarView.swift in Sources */,
 				C146CA632A7EB1AB008B28BD /* MuslimGateApp.swift in Sources */,
+				C16D24DA2AC5DE30004D7798 /* QuranView.swift in Sources */,
+				C16D24D82AC5DE1C004D7798 /* QuranViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +431,84 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C14EBFD02AC0C17900897C94 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 9.6.0;
+			};
+		};
+		C16D24DB2AC5F856004D7798 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		C1FFB2102AC0D1D8003BCBCE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		C1FFB2132AC0D233003BCBCE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C14EBFD12AC0C17900897C94 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C14EBFD02AC0C17900897C94 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		C14EBFD32AC0C17900897C94 /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C14EBFD02AC0C17900897C94 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		C14EBFD52AC0C17900897C94 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C14EBFD02AC0C17900897C94 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		C14EBFD72AC0C17900897C94 /* FirebaseStorageCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C14EBFD02AC0C17900897C94 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageCombine-Community";
+		};
+		C16D24DC2AC5F856004D7798 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C16D24DB2AC5F856004D7798 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		C1FFB2112AC0D1D8003BCBCE /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C1FFB2102AC0D1D8003BCBCE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		C1FFB2142AC0D233003BCBCE /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C1FFB2102AC0D1D8003BCBCE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		C1FFB2162AC0D233003BCBCE /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C1FFB2102AC0D1D8003BCBCE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C146CA572A7EB1AA008B28BD /* Project object */;
 }

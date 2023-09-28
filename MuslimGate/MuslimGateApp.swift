@@ -6,12 +6,18 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct MuslimGateApp: App {
+    
     var body: some Scene {
         WindowGroup {
-            TabBarView()
+            QuranView()
         }
+    }
+    
+    init() {
+        FirebaseApp.configure()
     }
 }
