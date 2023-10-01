@@ -16,7 +16,7 @@ struct ContentView: View {
     @State var selectedTab: Tab = .house
     
     var body: some View {
-            
+
         ZStack {
             
             TabView {
