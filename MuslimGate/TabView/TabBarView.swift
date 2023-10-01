@@ -8,15 +8,36 @@
 import SwiftUI
 
 struct TabBarView: View {
-    
+    @Binding var selectedTab: Tab
+    private var fillImage: String {
+        return selectedTab.rawValue + ".fill"
+    }
     
     var body: some View {
-        Text("Hello m")
+        HStack {
+            ForEach(Tab.allCases, id: \.rawValue) { tab in
+                Spacer()
+                Image(systemName: selectedTab == tab ? fillImage : tab.rawValue)
+                    .scaleEffect(selectedTab == tab ? 1.25 : 1.0)
+                    .foregroundColor(selectedTab == tab ? .red : .gray)
+                    .font(.system(size: 22))
+                    .onTapGesture {
+                        withAnimation(.easeIn(duration: 0.2)) {
+                            selectedTab = tab
+                        }
+                    }
+                Spacer()
+            }
+        }
+        .frame(height: 60)
+        .background(.thinMaterial)
+        .cornerRadius(15)
+        .padding()
     }
 }
 
 struct TabBarView_Previews: PreviewProvider {
     static var previews: some View {
-        TabBarView()
+        TabBarView(selectedTab: .constant(.gearshape))
     }
 }
