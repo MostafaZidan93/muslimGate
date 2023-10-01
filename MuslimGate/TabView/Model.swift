@@ -6,33 +6,11 @@
 //
 
 import Foundation
+import SwiftUI
 
-enum TabbedItems: Int, CaseIterable {
-    case home = 0
-    case favourite
-    case settings
-    
-    
-    var title: String {
-        switch self {
-        case .home:
-            return "Home"
-        case .favourite:
-            return "Favourite"
-        case .settings:
-            return "Settings"
-        }
-    }
-    
-    var iconName: String {
-        switch self {
-        case .home:
-            return "house.fill"
-        case .favourite:
-            return "heart.fill"
-        case .settings:
-            return "gearshape.fill"
-        }
-    }
+enum Tab: String, CaseIterable {
+    case house
+    case book
+    case person
+    case gearshape
 }
-//
