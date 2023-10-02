@@ -26,6 +26,7 @@ struct QuranView: View {
                                 .aspectRatio(contentMode: .fill)
                                 .padding()
                                 .frame(width: UIScreen.main.bounds.width)
+                                
                         }
                     } else {
                         ProgressView()

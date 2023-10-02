@@ -32,6 +32,10 @@ struct TabBarView: View {
         .frame(height: 60)
         .background(.thinMaterial)
         .cornerRadius(15)
+        .overlay(
+            RoundedRectangle(cornerRadius: 15)
+                .stroke(Color(ColorSet.defaultColorSet), lineWidth: 2)
+        )
         .padding()
     }
 }

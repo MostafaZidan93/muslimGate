@@ -13,7 +13,8 @@ struct MuslimGateApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            QuranView()
         }
     }
     
