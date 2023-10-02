@@ -19,7 +19,7 @@ struct TabBarView: View {
                 Spacer()
                 Image(systemName: selectedTab == tab ? fillImage : tab.rawValue)
                     .scaleEffect(selectedTab == tab ? 1.25 : 1.0)
-                    .foregroundColor(selectedTab == tab ? .red : .gray)
+                    .foregroundColor(selectedTab == tab ? Color(ColorSet.defaultColorSet) : .gray)
                     .font(.system(size: 22))
                     .onTapGesture {
                         withAnimation(.easeIn(duration: 0.2)) {

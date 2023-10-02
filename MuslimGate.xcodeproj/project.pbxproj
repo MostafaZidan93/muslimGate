@@ -25,6 +25,7 @@
 		C16D24DA2AC5DE30004D7798 /* QuranView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16D24D92AC5DE30004D7798 /* QuranView.swift */; };
 		C16D24DD2AC5F856004D7798 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = C16D24DC2AC5F856004D7798 /* SDWebImageSwiftUI */; };
 		C1B7EF282AC0B6F900D3B1AC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1B7EF272AC0B6F900D3B1AC /* GoogleService-Info.plist */; };
+		C1C28B452ACA71FE00DD48DD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C28B442ACA71FE00DD48DD /* Constants.swift */; };
 		C1FFB2122AC0D1D8003BCBCE /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C1FFB2112AC0D1D8003BCBCE /* FirebaseAuth */; };
 		C1FFB2152AC0D233003BCBCE /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = C1FFB2142AC0D233003BCBCE /* FirebaseDatabase */; };
 		C1FFB2172AC0D233003BCBCE /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C1FFB2162AC0D233003BCBCE /* FirebaseDatabaseSwift */; };
@@ -45,6 +46,7 @@
 		C16D24D72AC5DE1C004D7798 /* QuranViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranViewModel.swift; sourceTree = "<group>"; };
 		C16D24D92AC5DE30004D7798 /* QuranView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranView.swift; sourceTree = "<group>"; };
 		C1B7EF272AC0B6F900D3B1AC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C1C28B442ACA71FE00DD48DD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		C146CA612A7EB1AB008B28BD /* MuslimGate */ = {
 			isa = PBXGroup;
 			children = (
+				C1C28B422ACA71D000DD48DD /* Helpers */,
 				C16D24D42AC5DDF4004D7798 /* Quran */,
 				C13BC4A02A84D2F30060B9CF /* TabView */,
 				C146CA622A7EB1AB008B28BD /* MuslimGateApp.swift */,
@@ -132,6 +135,22 @@
 				C16D24D92AC5DE30004D7798 /* QuranView.swift */,
 			);
 			path = Quran;
+			sourceTree = "<group>";
+		};
+		C1C28B422ACA71D000DD48DD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C1C28B432ACA71E100DD48DD /* Constants */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C1C28B432ACA71E100DD48DD /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				C1C28B442ACA71FE00DD48DD /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C13BC4AB2A84D4950060B9CF /* Model.swift in Sources */,
+				C1C28B452ACA71FE00DD48DD /* Constants.swift in Sources */,
 				C146CA652A7EB1AB008B28BD /* ContentView.swift in Sources */,
 				C13BC4A52A84D3C10060B9CF /* HomeView.swift in Sources */,
 				C16D24D62AC5DE06004D7798 /* QuranModel.swift in Sources */,
